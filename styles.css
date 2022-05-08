@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lexend+Deca:wght@400;500;600;700;800;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: hsl(233, 47%, 7%);
+    display: grid;
+    place-items: center;
+
+
+}
+
+
+
+main {
+    display: flex;
+    width: 50rem;
+    height: fit-content;
+
+
+    margin-top: 20vh;
+    border: solid 1px hsl(244, 38%, 16%);
+    background-color: hsl(244, 38%, 16%);
+    color: hsla(0, 0%, 100%, 0.6);
+    border-radius: 0 8px 8px 0;
+
+
+
+
+}
+
+.end {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-content: flex-end;
+    padding: 2rem 3rem 1rem 0;
+}
+
+.bold {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    padding-left: 2rem;
+    color: hsl(0, 0%, 100%);
+    padding-top: 2rem;
+
+
+}
+
+
+.end p:nth-child(2) {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    padding-left: 2rem;
+
+
+}
+
+#sub-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    font-size: 9px;
+    line-height: 1.5;
+    padding: 2rem 3rem 1rem 2rem;
+    width: 65%;
+    color: hsla(0, 0%, 100%, 0.75);
+
+}
+
+#title {
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    padding: 2rem 3rem 1rem 2rem;
+
+    line-height: 1.2;
+    font-size: 18px;
+    color: hsl(0, 0%, 100%);
+
+}
+
+a {
+    text-decoration: none;
+    color: hsl(277, 64%, 61%);
+}
+
+.img {
+    display: none;
+}
+
+
+.hover {
+    background-color: hsl(277, 64%, 61%);
+    border-radius: 0 12px 12px 0;
+    background-image: url(./images/image-header-desktop.jpg);
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    position: relative;
+    width: 40rem;
+
+}
+
+.cover {
+    opacity: 0.67;
+    position: absolute;
+    width: 100%;
+    border-radius: 0 12px 12px 0;
+    height: 100%;
+
+    background-color: hsl(277, 64%, 61%);
+    /* width: 40rem;
+    height: fit-content; */
+}
+
+@media (max-width: 375px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hover {
+        background-color: hsl(277, 64%, 61%);
+        border-radius: 0 12px 12px 0;
+        background-image: url(./images/image-header-mobile.jpg);
+        background-repeat: no-repeat;
+        /* background-size: cover; */
+        position: relative;
+        width: 40rem;
+
+    }
+
+    .cover {
+        opacity: 0.67;
+        position: absolute;
+        width: 100%;
+        border-radius: 0 12px 12px 0;
+        height: 100%;
+
+        background-color: hsl(277, 64%, 61%);
+        /* width: 40rem;
+    height: fit-content; */
+    }
+}
